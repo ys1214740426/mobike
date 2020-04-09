@@ -1,0 +1,85 @@
+/* 版心 */
+.md-container {
+    width: 1080px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+.header-wrap{
+    position: relative;
+}
+/* 轮播图 */
+.swiper-container img {
+    display: block;
+    width: 100%;
+}
+
+/* logo小块 */
+.header-logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -540px;
+    width: 1080px;
+    height: 80px;
+    background-color: greenyellow;
+}
+
+/* 文字小块 */
+.header-tit{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -540px;
+    margin-top:-73px;
+    width: 1080px;
+    height: 146px;
+    background-color: greenyellow;
+}
+/* 新闻小块 */
+.header-news{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -540px;
+    width: 1080px;
+    height:42px;
+    background-color: greenyellow;
+}
+/* 图片广告 */
+.heors{
+     border-top:2px solid #fff;
+     margin-left:-2px;
+}
+.heor-item{
+    float: left;
+    width: 25%;
+    height: 250px;
+    background-color: greenyellow;
+    border-left:2px solid #fff;
+    box-sizing: border-box;
+}
+/* 图标连接 */
+.meta-links{
+    width: 100%;
+}
+.meta-link{
+    float: left;
+    width: 33.33%;
+    height: 140px;
+}
+
+
+
+/*  适配 PAD和手机端   版心  padding:0 20px 
+用PC的页面去适配PAD和手机端 ：  PAD和手机端  - 版本  100%
+三套CSS样式 => 只是写在一个样式文件中而已
+*/
+@media (max-width:1080px){
+    .md-container,.header-logo,.header-tit,.header-news{width:100%;box-sizing: border-box;}
+    .header-logo,.header-tit,.header-news{margin-left:-50%}
+    .heor-item{width: 50%;margin-bottom:2px;}
+}
+@media (max-width:640px){
+    .heor-item{width:100%;}
+    .meta-link{width:50%;}
+}

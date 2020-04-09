@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
+}
+.footer{
+    width: 100%;
+    height: 100%;
+    background: url(https://xyq.res.netease.com/pc/gw/20170118103441/img/ft2_7b14393.webp) no-repeat center top;
+}
+.footer-content{
+    /* margin:100px auto 0 */
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:780px;
+    height:240px;
+    margin-left:-390px;
+    margin-top:70px;
+    /* background-color: gold; */
+}
+.west01,.west02,.west03,.west04{float:left;}
+.west01{width: 200px;height: 160px;background: url(../west_01_3ca39fe.png) no-repeat;
+animation: west01 1s steps(8) infinite, box 1s ease alternate 3;}
+.west02{width: 200px;height: 160px;background: url(../west_02_47bad19.png) no-repeat;
+animation: west02 1s steps(8) infinite;}
+.west03{width: 170px;height: 240px;background: url(../west_03_f962447.png) no-repeat;
+    animation: west03 1s steps(8) infinite;}
+.west04{width: 210px;height: 200px;background: url(../west_04_6516d80.png) no-repeat;
+    animation: west04 1s steps(8) infinite;}
+
+/* 动画 animation 横向雪碧图: 第一帧background-position:0 0 最后一帧  -width  0
+  开始帧 0%  =  from       结束帧 100%   = to 
+*/
+@keyframes west01{
+    0%{background-position: 0 0;}
+    100%{background-position: -1600px 0;}
+}
+@keyframes west02{
+    0%{background-position: 0 0;}
+    100%{background-position: -1600px 0;}
+}
+@keyframes west03{
+    0%{background-position: 0 0;}
+    100%{background-position: -1360px 0;}
+}
+@keyframes west04{
+    0%{background-position: 0 0;}
+    100%{background-position: -1680px 0;}
+}
+/* 添加的又一个轨迹 - 丰富元素   transfrom： translate rotate scale */
+@keyframes box{
+    0%{transform:translate(0,0) rotate(0deg);}
+    100%{transform:translate(-200px,0)  rotate(360deg);}
+}
